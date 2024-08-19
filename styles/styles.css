@@ -1,0 +1,163 @@
+
+:root {
+    --cor-primaria: #F3F5FC; /* background */
+    --cor-secundaria: #343A40; /*cor do texto */
+    --cor-terciaria: #0A3871; /* cor do botão cripotagrafar */
+    --cor-quartenaria: #d8dfe8; /* cor do botão descriptografar */
+}
+
+*{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    background-color: var(--cor-primaria);
+}
+
+main {
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+    gap: 80px;
+}
+.logoAlura {
+    margin-left: 40px;
+    margin-top: 40px;
+    width: 10%;
+}
+
+.digitacao__texto {
+    border: none;
+    font-size: 32px;
+    line-height: 48px;
+    color: var(--cor-terciaria);
+    margin-top: 8%;
+    margin-left: 160px;
+    text-transform: lowercase;
+}
+::placeholder{ color:#0A3871 }
+    .digitacaotexto:focus {
+        outline: none;
+    }
+
+.caixa__mensagem {
+    display: flex;
+    width: 440px;
+    height: 944px;
+    border-radius: 24px;
+    font-size: 1.5rem;
+    padding: 5px;
+    justify-content: space-content;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #fff; 
+    margin-bottom: 5%;
+    margin-top: 3%;
+    }
+
+.mensagem {
+    height: 150px;
+    width: 330px;
+    margin: 10px 0px 20px 0px;
+    color: var(--cor-terciaria);
+    font-size: 32px;
+    text-align: center;
+    background: #fff;
+    border: none;
+}
+
+.imagem__lupa {
+    background: #fff;
+}
+.anexo__mensagem {
+    background: #fff;
+}
+
+.info__nenhuma {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    background: #fff;
+}
+
+.info__texto__deseja {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    background: #fff;
+}
+
+.mensagem:focus {
+    outline: none;
+}
+
+.informacao__digitacao {
+    width: 235px;
+    background-image: url(/assets/bi_exclamation-circle-fill.png);
+    background-repeat: no-repeat;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: right;
+    margin-top: 600px;
+    margin-left: 160px;
+    color: var(--cor-secundaria);
+}
+
+.botoes {
+    width: 680px;
+    height: 67px;
+    display: flex;
+    margin-top: 1%;
+    margin-left: 160px;
+    gap: 24px;
+}
+
+.botao__criptografar {
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    font-size: 16px;
+    line-height: 19.36px;
+    text-align: center;
+    background-color: var(--cor-terciaria);
+    color: #FFFF;
+    border-inline-color: var(--cor-terciaria);
+}
+
+.botao__descriptografar {
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    font-size: 16px;
+    line-height: 19.36px;
+    text-align: center;
+    background-color: var(--cor-quartenaria);
+    color: var(--cor-terciaria);
+    border-color: #0A3871;
+}
+
+.caixa__mensagem {
+    
+    width: 328px;
+    position: sticky;
+}
+
+.botao__copiar {
+    width: 328px;
+    height: 67px;
+    position: absolute;
+    bottom: 32px;
+    right: 7px;
+    cursor: pointer;
+    border-radius: 24px;
+    font-size: 16px;
+    line-height: 19.36px;
+    text-align: center;
+    color: var(--cor-terciaria);
+    border-color: #0A3871;
+    background: #fff;
+}
+
+.rodape {
+    font-size: 14px;
+    color: var(--cor-terciaria);
+    text-align: center;
+}

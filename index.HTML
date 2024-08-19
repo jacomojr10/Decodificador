@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Decodificador de texto V1</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <img class="logoAlura" src="./assets/Frame 6.png" alt="logo da Alura">
+    </header>
+    <main class="area__total"> 
+                
+        <section class="box__digite__texto">
+            <textarea class="digitacao__texto" cols="41" rows="4" placeholder="Digite seu texto"></textarea>
+            
+            <div class="informacao__digitacao">
+                Apenas letras minúsculas e sem acento.  
+            </div>
+
+            <div class="botoes">
+                <button class="botao__criptografar" onclick="btnEncriptar()">Criptografar</button>
+                <button type="button" class="botao__descriptografar" id="btn-desencriptografar">Descriptografar</button>
+            
+            </div>
+        </section>
+
+        <section class="caixa__mensagem">
+            <textarea class="mensagem" id="textocopiar" cols="30" rows="4" placeholder=""></textarea>
+            
+                                  
+            <div class="anexo__mensagem">
+                
+                <img class="imagem__lupa" src="./assets/High quality products 1 1.png">
+                
+                <div class="info__nenhuma">
+                Nenhuma informação encontrada
+                </div>
+                
+                <div class="info__texto__deseja">Digite um texto que você deseja <br>criptografar ou descriptografar.
+                </div>
+            </div>
+            
+            <button onclick="copiartexto()" type="button" class="botao__copiar" id="btn-copiar">Copiar</button>
+        </section>
+       
+    </main>    
+
+<footer class="rodape">Desenvolvido por Jácomo Chiaratto Jr. - 2024</footer>
+
+<script src ="./js/app.js"></script>
+</body>
+
+</html>
